@@ -1,0 +1,36 @@
+#include"header.h"
+#include"DS.h"
+#include"declaration.h"
+
+void* (*afp[NOF])(void*);
+void* mainMenu(void*);
+void* exitProgram(void*);
+
+void* creatLinklist(void*);
+
+void* insertNode(void*);
+void* deleteNode(void*);
+void* displayLinklist(void*);
+void* sortLinklist(void*);
+void* rotateLinklist(void*);
+
+int init()
+{
+#ifdef DEBUG
+        printf("%s: Begin.\n",__func__);
+#endif
+	afp[0] = mainMenu;
+	afp[1] = exitProgram;
+
+	afp[2] = creatLinklist;
+
+	afp[3] = insertNode;
+	afp[4] = deleteNode;
+	afp[5] = displayLinklist;
+	afp[6] = sortLinklist;
+	afp[7] = rotateLinklist;
+#ifdef DEBUG
+        printf("%s: End.\n",__func__);
+#endif
+	return 0;
+}
