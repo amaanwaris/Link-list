@@ -14,6 +14,13 @@ void* displayLinklist(void*);
 void* sortLinklist(void*);
 void* rotateLinklist(void*);
 
+void* insertBeg(void*);
+void* insertEnd(void*);
+void* insertNth(void*);
+void* insertkey(void*);
+
+void* creatNode(void*);
+
 int init()
 {
 #ifdef DEBUG
@@ -29,6 +36,14 @@ int init()
 	afp[5] = displayLinklist;
 	afp[6] = sortLinklist;
 	afp[7] = rotateLinklist;
+
+	afp[8]  =  insertBeg;
+	afp[9]	=  insertEnd;
+	afp[10] =  insertNth;
+	afp[11] =  insertkey;
+
+	afp[12] = creatNode;
+
 #ifdef DEBUG
         printf("%s: End.\n",__func__);
 #endif

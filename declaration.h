@@ -1,4 +1,4 @@
-#define NOF 7
+#define NOF 16
 
 int init();
 
@@ -14,3 +14,10 @@ extern void* deleteNode(void*);
 extern void* sortLinklist(void*);
 extern void* displayLinklist(void*);
 extern void* rotateLinklist(void*);
+
+extern void* insertBeg(void*);
+extern void* insertEnd(void*);
+extern void* insertNth(void*);
+extern void* insertkey(void*);
+
+extern void* creatNode(void*);
