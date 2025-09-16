@@ -4,7 +4,7 @@ CC=gcc
 CF=-c -Wall -Wextra
 DF=-DDEBUG
 #list of source files
-SRC_FILES = main.c init.c mainMenu.c exitProgram.c creatLinklist.c insertNode.c deleteNode.c displayLinklist.c sortLinklist.c rotateLinklist.c insertBeg.c insertEnd.c insertNth.c insertkey.c creatNode.c
+SRC_FILES = main.c init.c mainMenu.c exitProgram.c creatLinklist.c insertNode.c deleteNode.c displayLinklist.c sortLinklist.c rotateLinklist.c insertBeg.c insertEnd.c insertNth.c insertkey.c creatNode.c deleteBeg.c deleteEnd.c deleteNth.c deletekey.c
 
 #list of object files
 

@@ -21,3 +21,8 @@ extern void* insertNth(void*);
 extern void* insertkey(void*);
 
 extern void* creatNode(void*);
+
+extern void* deleteBeg(void*);
+extern void* deleteEnd(void*);
+extern void* deleteNth(void*);
+extern void* deletekey(void*);
