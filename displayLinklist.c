@@ -18,6 +18,7 @@ void* displayLinklist(void *arg)
 		return 0;
 	}
 	i=1;
+	printf("Linklist:\n");
 	while(cur != NULL)
 	{
 		printf(" (%d -> %d)",i++,cur->info);

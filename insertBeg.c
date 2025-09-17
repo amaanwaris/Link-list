@@ -15,10 +15,12 @@ void* insertBeg(void *arg)
         {
                 strt->start = (*afp[12])(0);  //creatNode()
         }
-	new=(*afp[12])(0);
-        new->next = strt->start;
-        strt->start = new;
-
+       else
+	{
+	       new = (*afp[12])(0);  //creatNode()
+	       new->next = strt->start;
+	       strt->start = new;
+	}
 #ifdef DEBUG
         printf("%s: End.\n",__func__);
 #endif

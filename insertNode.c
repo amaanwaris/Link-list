@@ -4,9 +4,10 @@
 
 void* insertNode(void *arg)
 {
+	Linklist *strt;
 	int i;
 	char *insertmenu[]={"__InsertMenu__",
-			"1: Insert Node at the Eeginning",
+			"1: Insert Node at the Beginning",
 			"2: Insert Node at End",
 			"3: Insert After Nth Node",
 			"4: Insert After Key value Node ",
@@ -21,6 +22,9 @@ void* insertNode(void *arg)
 	if ( (i>= 1) && (i<=4) )
 		(*afp[i+7])(arg); 
 
+	strt = (Linklist*)arg;
+	strt->noofNodes++;
+	strt->sizeofBytes;
 #ifdef DEBUG
         printf("%s: End.\n",__func__);
 #endif
